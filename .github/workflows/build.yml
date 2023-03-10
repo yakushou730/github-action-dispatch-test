@@ -20,3 +20,4 @@ jobs:
           echo "Second output"
           echo "Third output"
           echo "Test Branch/feat/001"
+          echo "sha: ${{ github.sha }}"
