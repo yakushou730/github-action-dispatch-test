@@ -1,5 +1,15 @@
 name: First Workflow
-on: workflow_dispatch # 表示要透過手動觸發
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Who to greet'
+        required: true
+        default: 'World'
+      tag:
+        description: 'Tag'
+        required: true
+        default: 'v1'
 jobs:
   first-job:
     runs-on: ubuntu-latest
