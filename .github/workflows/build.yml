@@ -1,0 +1,11 @@
+name: First Workflow
+on: workflow_dispatch # 表示要透過手動觸發
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print multiple command
+        run: |
+          echo "First output"
+          echo "Second output"
+          echo "Third output"
