@@ -1,12 +1,6 @@
 name: First Workflow
 on:
   workflow_dispatch:
-    branch:
-      - main
-      - dev
-      - alpha
-      - beta
-      - prod
     inputs:
       name:
         description: 'Who to greet'
@@ -27,3 +21,5 @@ jobs:
           echo "Third output"
           echo "Test Branch/feat/001"
           echo "sha: ${{ github.sha }}"
+          echo "run_number: ${{ github.run_number }}"
+          echo "date: $(date +'%Y%m%d%H%M%S%N%z')"
