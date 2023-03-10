@@ -21,5 +21,4 @@ jobs:
           echo "Third output"
           echo "Test Branch/feat/001"
           echo "sha: ${{ github.sha }}"
-          echo "run_number: ${{ github.run_number }}"
-          echo "date: $(date +'%Y%m%d%H%M%S%N%z')"
+          echo "-${{ github.ref_name }}.$(date +'%Y%m%d%H%M').${{ github.run_number }}"
