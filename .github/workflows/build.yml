@@ -1,6 +1,12 @@
 name: First Workflow
 on:
   workflow_dispatch:
+    branch:
+      - main
+      - dev
+      - alpha
+      - beta
+      - prod
     inputs:
       name:
         description: 'Who to greet'
